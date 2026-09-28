@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Budget overview for the Malta McConnelsville Rotary Club." />
+    <title>Budget | Malta McConnelsville Rotary Club</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Malta McConnelsville Rotary Club home">
+        <span class="brand-mark" aria-hidden="true">R</span>
+        <span>
+          <strong>Malta McConnelsville</strong>
+          <small>Rotary Club</small>
+        </span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#overview">Overview</a>
+        <a class="active" href="#budget" aria-current="page">Budget</a>
+        <a href="#reports">Reports</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-heading" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">Business organization</p>
+          <h1 id="page-title">Annual Budget</h1>
+          <p class="subtitle">Plan and track the club’s income and expenses for the Rotary year.</p>
+        </div>
+        <label class="year-picker" for="budget-year">
+          <span>Budget year</span>
+          <select id="budget-year" name="budget-year">
+            <option value="2024-2025">2024-2025</option>
+            <option value="2025-2026">2025-2026</option>
+            <option value="2026-2027" selected>2026-2027 (Current)</option>
+          </select>
+        </label>
+      </section>
+
+      <aside class="fiscal-note" aria-label="Rotary year information">
+        <span class="calendar-icon" aria-hidden="true">▣</span>
+        <div>
+          <strong>Current Rotary year: 2026-2027</strong>
+          <p>This budget covers July 1, 2026 through June 30, 2027.</p>
+        </div>
+      </aside>
+
+      <section class="summary-grid" aria-label="Budget summary">
+        <article class="summary-card">
+          <p>Projected income</p>
+          <strong>$48,500</strong>
+          <span>For the selected Rotary year</span>
+        </article>
+        <article class="summary-card">
+          <p>Planned expenses</p>
+          <strong>$43,250</strong>
+          <span>Across all programs</span>
+        </article>
+        <article class="summary-card accent">
+          <p>Budget remaining</p>
+          <strong>$5,250</strong>
+          <span>10.8% of projected income</span>
+        </article>
+      </section>
+
+      <section class="budget-panel" id="budget" aria-labelledby="allocation-title">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">2026-2027 budget</p>
+            <h2 id="allocation-title">Budget allocation</h2>
+          </div>
+          <button type="button">Edit budget</button>
+        </div>
+        <div class="allocation-row">
+          <div><span class="dot service"></span><strong>Community service</strong><small>Local programs and outreach</small></div>
+          <span>$18,000</span>
+        </div>
+        <div class="allocation-row">
+          <div><span class="dot youth"></span><strong>Youth programs</strong><small>Scholarships and leadership</small></div>
+          <span>$12,500</span>
+        </div>
+        <div class="allocation-row">
+          <div><span class="dot operations"></span><strong>Club operations</strong><small>Meetings and administration</small></div>
+          <span>$7,750</span>
+        </div>
+        <div class="allocation-row">
+          <div><span class="dot global"></span><strong>Global initiatives</strong><small>Rotary Foundation projects</small></div>
+          <span>$5,000</span>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
